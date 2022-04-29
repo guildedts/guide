@@ -2,7 +2,7 @@
 	"name": "@guildedts/guide",
 	"version": "0.0.1",
 	"description": "A Guide for creating a Guilded.TS bot.",
-	"main": "index.js",
+	"private": true,
 	"contributors": [
 		"Gamertike (https://gamertike.com)"
 	],
