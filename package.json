@@ -1,0 +1,19 @@
+{
+	"name": "@guildedts/guide",
+	"version": "0.0.1",
+	"description": "A Guide for creating a Guilded.TS bot.",
+	"main": "index.js",
+	"contributors": [
+		"Gamertike (https://gamertike.com)"
+	],
+	"repository": "https://github.com/guildedts/guide/@guildedts/guide",
+	"scripts": {
+		"dev": "vuepress dev guide",
+		"build": "vuepress build guide"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"vuepress": "next"
+	},
+	"packageManager": "yarn@3.2.0"
+}
