@@ -1,4 +1,4 @@
-# Getting started
+# Preparation
 
 ## Installing Node.JS
 
@@ -12,19 +12,25 @@ To check if you already have Node.JS installed on your machine, run `node -v` in
 
 :::: code-group
 ::: code-group-item NPM
+
 ```sh:no-line-numbers
 npm init
 ```
+
 :::
 ::: code-group-item Yarn
+
 ```sh:no-line-numbers
 yarn init
 ```
+
 :::
 ::: code-group-item PNPM
+
 ```sh:no-line-numbers
 pnpm init
 ```
+
 :::
 ::::
 
@@ -34,18 +40,24 @@ After you have setup your project, you can now finally install Guilded.TS! Run t
 
 :::: code-group
 ::: code-group-item NPM
+
 ```sh:no-line-numbers
 npm install guilded.ts
 ```
+
 :::
 ::: code-group-item Yarn
+
 ```sh:no-line-numbers
 yarn add guilded.ts
 ```
+
 :::
 ::: code-group-item PNPM
+
 ```sh:no-line-numbers
 pnpm add guilded.ts
 ```
+
 :::
 ::::

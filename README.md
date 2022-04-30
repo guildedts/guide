@@ -5,4 +5,4 @@
     <br />
 </div>
 
-> Guide hopefully coming soon.
+You can view the Guide [here](https://guide.guildedts.js.org),

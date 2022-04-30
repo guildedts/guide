@@ -7,13 +7,22 @@
 		"Gamertike (https://gamertike.com)"
 	],
 	"repository": "https://github.com/guildedts/guide/@guildedts/guide",
+	"parser": "markdown",
 	"scripts": {
 		"dev": "vuepress dev guide",
-		"build": "vuepress build guide"
+		"build": "vuepress build guide",
+		"lint": "yarn eslint 'guide/**/*.{ts,md}' --fix",
+		"format": "yarn prettier --write 'guide/**/*.{ts,md}'",
+		"prepare": "yarn format && yarn lint"
 	},
 	"license": "Apache-2.0",
 	"packageManager": "yarn@3.2.0",
 	"devDependencies": {
+		"@vuepress/plugin-search": "next",
+		"eslint": "^8.14.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-markdown": "^2.2.1",
+		"prettier": "^2.6.2",
 		"vuepress-vite": "^2.0.0-beta.6"
 	}
 }

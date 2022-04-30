@@ -5,30 +5,27 @@ export const sidebar: SidebarConfig = [
 		text: 'Home',
 		link: '/',
 		collapsible: true,
-		children: [
-			{
-				text: 'Introduction',
-				link: '/',
-			},
-			{
-				text: 'Contributing',
-				link: '/Contributing.html',
-			},
-		],
+		children: ['/', '/Contributing.html'],
 	},
 	{
 		text: 'Getting started',
-		link: '/getting-started',
+		link: '/getting-started/',
 		collapsible: true,
 		children: [
-			{
-				text: 'Preparation',
-				link: '/getting-started',
-			},
-			{
-				text: 'Setting up a bot',
-				link: '/getting-started/setting-up-a-bot.html',
-			}
+			'/getting-started/',
+			'/getting-started/setting-up-a-bot.html',
+			'/getting-started/publishing-your-bot.html',
+		],
+	},
+	{
+		text: 'Creating your bot',
+		link: '/creating-your-bot/',
+		collapsible: true,
+		children: [
+			'/creating-your-bot/',
+			'/creating-your-bot/creating-commands.html',
+			'/creating-your-bot/command-handling.html',
+			'/creating-your-bot/event-handling.html',
 		],
 	},
 ];
