@@ -18,6 +18,3 @@ jobs:
 
       - name: Build Guide
         run: yarn build
-      
-      - name: Check /guide/.vuepress
-        run: cd ./guide/.vuepress; pwd; ls;
