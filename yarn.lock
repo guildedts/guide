@@ -42,7 +42,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@guildedts/guide@workspace:."
   dependencies:
-    vuepress: next
+    vuepress-vite: ^2.0.0-beta.6
   languageName: unknown
   linkType: soft
 
@@ -1014,9 +1014,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.118":
-  version: 1.4.127
-  resolution: "electron-to-chromium@npm:1.4.127"
-  checksum: 960333a1da1b29b58ba0daab9e9c7527c2d54f4fc74a82c65a7556cb4ade1e8a1710e5ccd2c3bbf610a164800c6a13bad5c8212a0cf6f07091f1384f6e557939
+  version: 1.4.129
+  resolution: "electron-to-chromium@npm:1.4.129"
+  checksum: bc83599d5ba245d43a43a2e4e118cb212db5747d092f74a748733017adf2ac743c582406bd065dc25aeb3cf35d1ad3e86154018c8ebce32b18bcec502a5e2bcd
   languageName: node
   linkType: hard
 
@@ -1811,9 +1811,9 @@ __metadata:
   linkType: hard
 
 "lru-cache@npm:^7.7.1":
-  version: 7.8.1
-  resolution: "lru-cache@npm:7.8.1"
-  checksum: 31ea67388c9774300331d70f4affd5a433869bcf0fae5405f967d19d7b447930b713b0566a2e95362c9082034a8b496f3671ccf8f0c061d8e8048412663f9432
+  version: 7.9.0
+  resolution: "lru-cache@npm:7.9.0"
+  checksum: c91a293a103d11ea4f07de4122ba4f73d8203d0de51852fb612b1764296aebf623a3e11dddef1b3aefdc8d71af97d52b222dad5459dcb967713bbab9a19fed7d
   languageName: node
   linkType: hard
 
@@ -2045,7 +2045,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^3.3.1":
+"nanoid@npm:^3.3.3":
   version: 3.3.3
   resolution: "nanoid@npm:3.3.3"
   bin:
@@ -2228,13 +2228,13 @@ __metadata:
   linkType: hard
 
 "postcss@npm:^8.1.10, postcss@npm:^8.4.12":
-  version: 8.4.12
-  resolution: "postcss@npm:8.4.12"
+  version: 8.4.13
+  resolution: "postcss@npm:8.4.13"
   dependencies:
-    nanoid: ^3.3.1
+    nanoid: ^3.3.3
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
-  checksum: 248e3d0f9bbb8efaafcfda7f91627a29bdc9a19f456896886330beb28c5abea0e14c7901b35191928602e2eccbed496b1e94097d27a0b2a980854cd00c7a835f
+  checksum: 514fb3552805a5d039a2d6b4df3e73f657001716ca93c0d57e6067b0473abdea70276d80afc96005c9aaff82ed5d98062bd97724d3f47ca400fba0b5e9e436ed
   languageName: node
   linkType: hard
 
@@ -2351,8 +2351,8 @@ __metadata:
   linkType: hard
 
 "rollup@npm:^2.59.0, rollup@npm:^2.70.2":
-  version: 2.70.2
-  resolution: "rollup@npm:2.70.2"
+  version: 2.71.0
+  resolution: "rollup@npm:2.71.0"
   dependencies:
     fsevents: ~2.3.2
   dependenciesMeta:
@@ -2360,7 +2360,7 @@ __metadata:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: eb04eb9b87b30517308cb41018d57a23976f42b269c3229e4124746d3136a77aa16ba8b891a3fa571931dd72419eea40642a334835fe4f33161fea30d0b803f7
+  checksum: 37b591702850ec9b73733b461fe2fc1631b95d4f376edda4a44d8ee17662a2ff1ad5a039d02a949bc22f10d2adcc71dbe7a002435d43673da2f601bea89ab7a4
   languageName: node
   linkType: hard
 
@@ -2741,7 +2741,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vuepress-vite@npm:2.0.0-beta.41":
+"vuepress-vite@npm:^2.0.0-beta.6":
   version: 2.0.0-beta.41
   resolution: "vuepress-vite@npm:2.0.0-beta.41"
   dependencies:
@@ -2753,17 +2753,6 @@ __metadata:
     vuepress: bin/vuepress.js
     vuepress-vite: bin/vuepress.js
   checksum: 3023cd42c331fa1db2c16f4b7929489060bcf5169272f50c0a1d17caf8ca3eb636028d3bb4d51bd371520c1c5891525071a57178071d8d88501b2013481d7073
-  languageName: node
-  linkType: hard
-
-"vuepress@npm:next":
-  version: 2.0.0-beta.41
-  resolution: "vuepress@npm:2.0.0-beta.41"
-  dependencies:
-    vuepress-vite: 2.0.0-beta.41
-  bin:
-    vuepress: bin/vuepress.js
-  checksum: 8ca5ce79f9c407c67418cc536762096ba392fbdc055f308718b50c8b03a083294dca15dcb4c90fc2bafaa85713527303fd90d2130ed4bf3f19bb48b2338e636e
   languageName: node
   linkType: hard
 

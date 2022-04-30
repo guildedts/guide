@@ -1,0 +1,1 @@
+const e={key:"v-8daa1a0e",path:"/",title:"Introduction",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:2,title:"Before you begin",slug:"before-you-begin",children:[]}],git:{updatedTime:1651271913e3,contributors:[{name:"Danielius Vaisnoras",email:"dvaisnoras75@gmail.com",commits:1}]},filePathRelative:"README.md"};export{e as data};

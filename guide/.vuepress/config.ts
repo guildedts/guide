@@ -1,7 +1,17 @@
-import { defineUserConfig } from 'vuepress';
+import { defaultTheme, defineUserConfig, Theme } from 'vuepress-vite';
+import { navbar, sidebar } from './configs';
 
 export default defineUserConfig({
 	lang: 'en-US',
-	title: 'Guilded.TS',
+	title: 'Guilded.TS Guide',
 	description: 'A Guide for creating a Guilded.TS bot.',
+	head: [['link', { rel: 'icon', href: '/logo.jpg' }]],
+	theme: defaultTheme({
+		navbar,
+		sidebar,
+		docsRepo: 'guildedts/guide',
+		docsDir: 'guide',
+		logo: '/logo.jpg',
+		repo: 'guildedts/guide',
+	}),
 });

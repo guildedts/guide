@@ -1,0 +1,1 @@
+const t={key:"v-975c0594",path:"/Contributing.html",title:"Contributing",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:2,title:"Getting started",slug:"getting-started",children:[]},{level:2,title:"Committing your changes",slug:"committing-your-changes",children:[]}],git:{updatedTime:null,contributors:[]},filePathRelative:"Contributing.md"};export{t as data};
