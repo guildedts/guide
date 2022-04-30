@@ -19,6 +19,9 @@ jobs:
       - name: Log PWD
         run: echo "$PWD"
 
+      - name: Show directories
+        run: ls
+
       - name: Build Guide
         run: yarn build
       
