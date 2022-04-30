@@ -17,7 +17,7 @@ jobs:
         run: yarn install
 
       - name: Log PWD
-        run: echo "$PWD"
+        run: pwd
 
       - name: Show directories
         run: ls
@@ -25,3 +25,9 @@ jobs:
       - name: Build Guide
         run: yarn build
       
+      - name: CD into /guide/.vuepress
+        run: cd ./guide/.vuepress
+
+      - name: Log new PWD
+        run: pwd
+        
