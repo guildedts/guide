@@ -20,4 +20,4 @@ jobs:
         run: yarn build
       
       - name: Check /guide/.vuepress
-        run: cd ./guide/.vuepress; pwd; ls;;
+        run: cd ./guide/.vuepress; pwd; ls;
