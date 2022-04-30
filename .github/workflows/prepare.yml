@@ -16,14 +16,8 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Log PWD
-        run: pwd
-
-      - name: Show directories
-        run: ls
-
       - name: Build Guide
         run: yarn build
       
-      - name: CD into /guide/.vuepress
-        run: cd ./guide/.vuepress; pwd;
+      - name: Check /guide/.vuepress
+        run: cd ./guide/.vuepress; pwd; ls;;
