@@ -27,7 +27,4 @@ jobs:
       
       - name: CD into /guide/.vuepress
         run: cd ./guide/.vuepress
-
-      - name: Log new PWD
         run: pwd
-        
