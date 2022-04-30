@@ -26,5 +26,4 @@ jobs:
         run: yarn build
       
       - name: CD into /guide/.vuepress
-        run: cd ./guide/.vuepress
-        run: pwd
+        run: cd ./guide/.vuepress; pwd;
