@@ -1,1 +1,0 @@
-const t={key:"v-242a5de3",path:"/getting-started/setting-up-a-bot.html",title:"Setting up a bot",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:null,contributors:[]},filePathRelative:"getting-started/setting-up-a-bot.md"};export{t as data};

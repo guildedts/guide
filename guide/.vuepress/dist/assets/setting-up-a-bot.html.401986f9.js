@@ -1,1 +1,0 @@
-import{_ as t,o as e,c as a,a as o,d as s}from"./app.f07365b2.js";const n={},c={id:"setting-up-a-bot",tabindex:"-1"},_=o("a",{class:"header-anchor",href:"#setting-up-a-bot","aria-hidden":"true"},"#",-1),r=s(" Setting up a bot"),i=[_,r];function d(h,p){return e(),a("h1",c,i)}var f=t(n,[["render",d],["__file","setting-up-a-bot.html.vue"]]);export{f as default};
