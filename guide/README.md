@@ -4,12 +4,11 @@ Welcome to **Guilded.TS**. You may be wondering on how to make a **Guilded bot**
 
 **This Guide will be covering the following:**
 
--   [Getting started from scratch](/getting-started)
--   [Setting up a bot](/getting-started/setting-up-a-bot)
--   Listening for events
--   Creating your first command
--   Command handling
--   Event handling
+-   [Getting started from scratch](/getting-started/)
+-   [Setting up a bot](/getting-started/setting-up-a-bot.html)
+-   [Creating commands](/creating-your-bot/creating-commands.html)
+-   [Command handling](/creating-your-bot/command-handling.html)
+-   [Event handling](/creating-your-bot/event-handling.html)
 
 ## Before you begin
 
