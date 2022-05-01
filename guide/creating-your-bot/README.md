@@ -124,3 +124,31 @@ config.json
 ::: tip
 `node_modules` should **never** be committed to your repository considering that you can generate this folder by installing your dependencies. Your dependencies are saved in the `package.json` file.
 :::
+
+## Creating the main file
+
+Now that you probably have your configuration done by now, you can now finally get started with getting your bot online! In your editor, create a new file. We recommend calling this file `index.js` since this is the main file for your bot.
+
+```js{2,5,8,11}
+// Import the Client class
+const { Client } = require('guilded.ts');
+
+// Create a client instance
+const client = new Client();
+
+// Wait until the bot is ready to use
+client.once('ready', () => console.log('Ready!'));
+
+// Login to Guilded with your bot token
+client.login(token);
+```
+
+Now that you have added the most minimal code for your bot to come online, run `node index.js` in your terminal to start your bot.
+
+::: tip
+You can add `"main": "index.js"` so you can use `node .`. You can also include a script like `"scripts": { "start": "node ." }` to be able to run `npm start` or `npm run start`.
+:::
+
+## Resulting code
+
+If you want to check over the code we have shown, you can view it in our GitHub repository [here](https://github.com/guildedts/guide/tree/main/examples/creating-your-bot/initial-files).

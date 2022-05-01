@@ -11,9 +11,12 @@ export default defineUserConfig({
 	theme: defaultTheme({
 		navbar,
 		sidebar,
+		sidebarDepth: 3,
 		docsRepo: 'guildedts/guide',
 		docsDir: 'guide',
 		logo: '/logo.jpg',
 		repo: 'guildedts/guide',
+		editLinkText: 'Edit this page on GitHub',
+		contributors: false,
 	}),
 });
