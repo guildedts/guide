@@ -10,7 +10,7 @@ To prevent your bot token from being pushed to your repository, we will be using
 
 ### Using `config.json`
 
-Storing sensitive information via a `config.json` is a very method. You can access your token in amy file by importing it.
+Storing sensitive information via a `config.json` is a very common method. You can access your token in any file by importing it.
 
 :::: code-group
 ::: code-group-item config.json
