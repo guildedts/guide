@@ -3,29 +3,23 @@ import { SidebarConfig } from 'vuepress-vite';
 export const sidebar: SidebarConfig = [
 	{
 		text: 'Home',
-		link: '/',
-		collapsible: true,
-		children: ['/', '/Contributing.html'],
+		children: ['/', '/Contributing.md'],
 	},
 	{
 		text: 'Getting started',
-		link: '/getting-started/',
-		collapsible: true,
 		children: [
 			'/getting-started/',
-			'/getting-started/setting-up-a-bot.html',
-			'/getting-started/publishing-your-bot.html',
+			'/getting-started/setting-up-a-bot.md',
+			'/getting-started/publishing-your-bot.md',
 		],
 	},
 	{
 		text: 'Creating your bot',
-		link: '/creating-your-bot/',
-		collapsible: true,
 		children: [
 			'/creating-your-bot/',
-			'/creating-your-bot/creating-commands.html',
-			'/creating-your-bot/command-handling.html',
-			'/creating-your-bot/event-handling.html',
+			'/creating-your-bot/creating-commands.md',
+			'/creating-your-bot/command-handling.md',
+			'/creating-your-bot/event-handling.md',
 		],
 	},
 ];
