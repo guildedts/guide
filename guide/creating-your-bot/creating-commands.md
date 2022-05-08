@@ -154,3 +154,7 @@ client.on('messageCreate', message => {
 // Login to Guilded with your bot token
 client.login(token);
 ```
+
+## Resulting code
+
+If you want to check over the code we have shown, you can view it in our GitHub repository [here](https://github.com/guildedts/guide/tree/main/examples/creating-your-bot/creating-commands).
