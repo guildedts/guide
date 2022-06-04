@@ -16,9 +16,9 @@ Welcome to **Guilded.TS**. You may be wondering on how to make a **Guilded bot**
 The **Guilded bot API** is currently in early access, so you will need approval of a **Guilded staff member** to access the **bot API**.
 :::
 
-Making a **Guilded bot** may be cool and all, but there are some things you should take into mind before getting started. To make a **Guilded bot** using **Guilded.TS**, you should have a fairly good understanding of the **JavaScript** language itself. Although making a **Guilded bot** with \*_Guilded.TS_ should'nt be to hard, trying to do so will just leave you with syntax and errors you dont understand.
+Making a **Guilded bot** may be cool and all, but there are some things you should take into mind before getting started. To make a **Guilded bot** using **Guilded.TS**, you should have a fairly good understanding of the **JavaScript** language itself. Although making a **Guilded bot** with **Guilded.TS** should'nt be to hard, trying to do so will just leave you with syntax and errors you dont understand.
 
-**If you want to lear JavaScript, we recommend the following links:**
+**If you want to learn JavaScript, we recommend the following links:**
 
 -   [MDN JavaScript Docs and Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 -   [Google](https://google.com)
