@@ -34,7 +34,7 @@ client.once('ready', () => console.log('Ready!'));
 client.on('messageCreate', message => {
     // Ceck if the user who created the message isnt the bot
     // This will prevent rate limits
-    if(messgae.createdBy === client.user.id) return;
+    if(message.createdBy === client.user.id) return;
 
     // Reply to the message
     message.reply('Hello friend!')
@@ -45,7 +45,7 @@ client.login(token);
 ```
 
 ::: tip
-The `if(messgae.createdBy === client.user.id) return;` code is there to prevent a loop of replies to the bot itself.
+The `if(message.createdBy === client.user.id) return;` code is there to prevent a loop of replies to the bot itself.
 :::
 
 The code above tells the bot to wait for a message to be sent inside a channel then reply to the message with `Hello friend!` only if the user who sent the message isnt the bot itself.
@@ -70,7 +70,7 @@ client.once('ready', () => console.log('Ready!'));
 client.on('messageCreate', message => {
     // Ceck if the user who created the message isnt the bot
     // This will prevent rate limits
-    if(messgae.createdBy === client.user.id) return;
+    if(message.createdBy === client.user.id) return;
 
     // Split the content and get the name and args
     const [ name, ...args ] = message.content.split(' ');
@@ -101,7 +101,7 @@ client.once('ready', () => console.log('Ready!'));
 client.on('messageCreate', message => {
     // Ceck if the user who created the message isnt the bot
     // This will prevent rate limits
-    if(messgae.createdBy === client.user.id) return;
+    if(message.createdBy === client.user.id) return;
 
     // Split the content and get the name and args
     const [ name, ...args ] = message.content.split(' ');
@@ -134,7 +134,7 @@ client.once('ready', () => console.log('Ready!'));
 client.on('messageCreate', message => {
     // Ceck if the user who created the message isnt the bot
     // This will prevent rate limits
-    if(messgae.createdBy === client.user.id) return;
+    if(message.createdBy === client.user.id) return;
 
     // Split the content and get the name and args
     const [ name, ...args ] = message.content.split(' ');
