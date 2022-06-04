@@ -137,7 +137,7 @@ const { Client } = require('guilded.ts');
 const client = new Client();
 
 // Wait until the bot is ready to use
-client.once('ready', () => console.log('Ready!'));
+client.once('ready', () => console.log('Ready! Shut down using "ctrl+c"'));
 
 // Login to Guilded with your bot token
 client.login(token);
