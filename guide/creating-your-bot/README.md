@@ -147,6 +147,8 @@ Now that you have added the most minimal code for your bot to come online, run `
 
 ::: tip
 You can add `"main": "index.js"` so you can use `node .`. You can also include a script like `"scripts": { "start": "node ." }` to be able to run `npm start` or `npm run start`.
+
+You can also stop the current process by pressing `Ctrl + C` and then press the up arrow to show the last command in your terminal.
 :::
 
 ## Resulting code
