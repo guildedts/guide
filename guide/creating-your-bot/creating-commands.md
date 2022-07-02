@@ -32,9 +32,9 @@ client.once('ready', () => console.log('Ready!'));
 
 // Wait for a message to be sent in a channel
 client.on('messageCreate', message => {
-    // Ceck if the user who created the message isnt the bot
+    // Check if the user who created the message isnt the bot
     // This will prevent rate limits
-    if(message.createdBy === client.user.id) return;
+    if (message.author?.isBot) return;
 
     // Reply to the message
     message.reply('Hello friend!')
@@ -45,7 +45,7 @@ client.login(token);
 ```
 
 ::: tip
-The `if(message.createdBy === client.user.id) return;` code is there to prevent a loop of replies to the bot itself.
+The `if (message.author?.isBot) return;` code is there to prevent a loop of replies to the bot itself.
 :::
 
 The code above tells the bot to wait for a message to be sent inside a channel then reply to the message with `Hello friend!` only if the user who sent the message isnt the bot itself.
@@ -68,9 +68,9 @@ client.once('ready', () => console.log('Ready!'));
 
 // Wait for a message to be sent in a channel
 client.on('messageCreate', message => {
-    // Ceck if the user who created the message isnt the bot
+    // Check if the user who created the message isnt the bot
     // This will prevent rate limits
-    if(message.createdBy === client.user.id) return;
+    if (message.author?.isBot) return;
 
     // Split the content and get the name and args
     const [ name, ...args ] = message.content.split(' ');
@@ -99,9 +99,9 @@ client.once('ready', () => console.log('Ready!'));
 
 // Wait for a message to be sent in a channel
 client.on('messageCreate', message => {
-    // Ceck if the user who created the message isnt the bot
+    // Check if the user who created the message isnt the bot
     // This will prevent rate limits
-    if(message.createdBy === client.user.id) return;
+    if (message.author?.isBot) return;
 
     // Split the content and get the name and args
     const [ name, ...args ] = message.content.split(' ');
@@ -132,9 +132,9 @@ client.once('ready', () => console.log('Ready!'));
 
 // Wait for a message to be sent in a channel
 client.on('messageCreate', message => {
-    // Ceck if the user who created the message isnt the bot
+    // Check if the user who created the message isnt the bot
     // This will prevent rate limits
-    if(message.createdBy === client.user.id) return;
+    if (message.author?.isBot) return;
 
     // Split the content and get the name and args
     const [ name, ...args ] = message.content.split(' ');
