@@ -1,5 +1,7 @@
 // Import the Client class
 const { Client } = require('guilded.ts');
+// Import the config file
+const [ token ] = require('./config.json');
 
 // Create a client instance
 const client = new Client();
