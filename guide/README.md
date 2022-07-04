@@ -27,4 +27,4 @@ After you have got a good grasp at **JavaScript**, feel free to come back here t
 
 ---
 
-Inspired by [Discord.JS Guide](https://discordjs.guide).
+Inspired by the [Discord.JS Guide](https://discordjs.guide).
