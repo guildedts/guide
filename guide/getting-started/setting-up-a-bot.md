@@ -6,7 +6,7 @@ If you already have a bot, skip to [Getting your bot token](#getting-your-bot-to
 
 ## Creating a bot
 
-To create a **Guilded bot**, Go into the setting of the server you want to create a bot in, then go to the `Bots` tab. After that click the `Create a bot` button.
+To create a **Guilded Bot**, Go into the setting of the server you want to create a bot in, then go to the `Bots` tab. After that click the `Create a bot` button.
 
 ![Bots page](/bots-page.jpg)
 
@@ -24,7 +24,7 @@ After you have created your bot, go back to the `Bots` page and click the three 
 
 ![Bot context menu](/bot-context-menu.jpg)
 
-Now click the `Manage auth tokens` button and press `Generate token` to generate a auth token. This token will be used for logging into your bot, so make sure you save it.
+Now click the `Manage auth tokens` button and press `Generate token` to generate an auth token. This token will be used for logging into your bot, so make sure you save it.
 
 ::: danger
 Keep this token private.

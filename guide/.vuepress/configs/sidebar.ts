@@ -1,10 +1,7 @@
 import { SidebarConfig } from 'vuepress-vite';
 
 export const sidebar: SidebarConfig = [
-	{
-		text: 'Home',
-		children: ['/', '/Contributing.md'],
-	},
+	{ text: 'Home', children: ['/', '/Contributing.md'] },
 	{
 		text: 'Getting started',
 		children: [
@@ -18,8 +15,7 @@ export const sidebar: SidebarConfig = [
 		children: [
 			'/creating-your-bot/',
 			'/creating-your-bot/creating-commands.md',
-			'/creating-your-bot/command-handling.md',
-			'/creating-your-bot/event-handling.md',
+			'/creating-your-bot/listening-for-events.md',
 		],
 	},
 ];

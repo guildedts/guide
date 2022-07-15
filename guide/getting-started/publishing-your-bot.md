@@ -8,4 +8,4 @@ Currently you cannot unpublish your bot.
 
 ![Bot context menu](/bot-context-menu.jpg)
 
-From here, click the `Publish bot` button. Now your bot should be invitable into different servers!
+From here, click the `Publish bot` button. Now your bot should be invitable into other servers!

@@ -1,159 +1,133 @@
 # Creating commands
 
-In this section you will learn how to create simple commands with the `messageCreate` event. We will be starting with the following code:
+In this section you will learn how to create simple commands with the `Command` abstract class from the **Guilded.TS framework**. Lets start by creating a folder named `commands` in the root directory, this will be used to store your commands. After you have made a `commands` directory, create a file named `ping.{js,ts}` inside it, this will be your **ping** command. Inside the file, add the following:
 
-```js
-// Import the Client class
-const { Client } = require('guilded.ts');
+:::: code-group
 
-// Create a client instance
-const client = new Client();
+::: code-group-item TypeScript
 
-// Wait until the bot is ready to use
-client.once('ready', () => console.log('Ready!'));
+```ts{1-2,4-8}
+import { Command } from '@guildedts/framework';
+import { Message } from 'guilded.ts';
 
-// Login to Guilded with your bot token
-client.login(token);
+export default class extends Command {
+	execute(message: Message) {
+		message.reply('Pong!');
+	}
+}
 ```
 
-## Listening for messages
-
-To listen to message we will be using the `messageCreate` event. Add the following code:
-
-```js{11,14,17-18}
-// Import the Client class
-const { Client } = require('guilded.ts');
-
-// Create a client instance
-const client = new Client();
-
-// Wait until the bot is ready to use
-client.once('ready', () => console.log('Ready!'));
-
-// Wait for a message to be sent in a channel
-client.on('messageCreate', message => {
-    // Ceck if the user who created the message isnt the bot
-    // This will prevent rate limits
-    if(message.createdBy === client.user.id) return;
-
-    // Reply to the message
-    message.reply('Hello friend!')
-});
-
-// Login to Guilded with your bot token
-client.login(token);
-```
-
-::: tip
-The `if(message.createdBy === client.user.id) return;` code is there to prevent a loop of replies to the bot itself.
 :::
 
-The code above tells the bot to wait for a message to be sent inside a channel then reply to the message with `Hello friend!` only if the user who sent the message isnt the bot itself.
+::: code-group-item CommonJS
 
-## Parsing message content
+```js{1,3-7}
+const { Command } = require('@guildedts/framework');
 
-Parsing message content is the way we will be getting our command name and the inputed args.
-
-Add the following code:
-
-```js{17}
-// Import the Client class
-const { Client } = require('guilded.ts');
-
-// Create a client instance
-const client = new Client();
-
-// Wait until the bot is ready to use
-client.once('ready', () => console.log('Ready!'));
-
-// Wait for a message to be sent in a channel
-client.on('messageCreate', message => {
-    // Ceck if the user who created the message isnt the bot
-    // This will prevent rate limits
-    if(message.createdBy === client.user.id) return;
-
-    // Split the content and get the name and args
-    const [ name, ...args ] = message.content.split(' ');
-
-    // Reply to the message
-    message.reply('Hello friend!');
-});
-
-// Login to Guilded with your bot token
-client.login(token);
+module.exports = class extends Command {
+	execute(message) {
+		message.reply('Pong!');
+	}
+}
 ```
 
-### Making commands
+:::
 
-Add a case switch for the command name:
+::: code-group-item ESM
 
-```js{20,22-24}
-// Import the Client class
-const { Client } = require('guilded.ts');
+```js{1,3-7}
+import { Command } from '@guildedts/framework';
 
-// Create a client instance
-const client = new Client();
-
-// Wait until the bot is ready to use
-client.once('ready', () => console.log('Ready!'));
-
-// Wait for a message to be sent in a channel
-client.on('messageCreate', message => {
-    // Ceck if the user who created the message isnt the bot
-    // This will prevent rate limits
-    if(message.createdBy === client.user.id) return;
-
-    // Split the content and get the name and args
-    const [ name, ...args ] = message.content.split(' ');
-
-    // Check which command was executed
-    switch(name) {
-        // If the command is "ping"
-        case 'ping':
-            message.reply('Pong!');
-    }
-});
-
-// Login to Guilded with your bot token
-client.login(token);
+export default class extends Command {
+	execute(message) {
+		message.reply('Pong!');
+	}
+}
 ```
 
-### Using args
+:::
 
-```js{25,27}
-// Import the Client class
-const { Client } = require('guilded.ts');
+::::
 
-// Create a client instance
-const client = new Client();
+::: tip
+By default, the command name is the name of the file without the extension. For example, `ping.js` is `ping`.
+:::
 
-// Wait until the bot is ready to use
-client.once('ready', () => console.log('Ready!'));
+## Using args
 
-// Wait for a message to be sent in a channel
-client.on('messageCreate', message => {
-    // Ceck if the user who created the message isnt the bot
-    // This will prevent rate limits
-    if(message.createdBy === client.user.id) return;
+:::: code-group
 
-    // Split the content and get the name and args
-    const [ name, ...args ] = message.content.split(' ');
+::: code-group-item TypeScript
 
-    // Check which command was executed
-    switch(name) {
-        // If the command is "ping"
-        case 'ping':
-            message.reply('Pong!');
-        // If the command is "echo"
-        case 'echo':
-            // Reply with the users input by joining the args with a space between
-            message.reply(args.join(' '));
-    }
-});
+```ts{1,5-9,11-12}
+import { Command, StringArgument } from '@guildedts/framework';
+import { Message } from 'guilded.ts';
 
-// Login to Guilded with your bot token
-client.login(token);
+export default class extends Command {
+    arguments = [
+        class extends StringArgument {
+            name = 'content';
+        }
+    ]
+
+	execute(message: Message, { content }: { content: string }) {
+		message.reply(content);
+	}
+}
 ```
+
+:::
+
+::: code-group-item CommonJS
+
+```js{1,4-8,10-11}
+const { Command, StringArgument } = require('@guildedts/framework');
+
+module.exports = class extends Command {
+    arguments = [
+        class extends StringArgument {
+            name = 'content';
+        }
+    ]
+
+	execute(message, { content }) {
+		message.reply(content);
+	}
+}
+```
+
+:::
+
+::: code-group-item ESM
+
+```js{1,4-8,10-11}
+import { Command, StringArgument } from '@guildedts/framework';
+
+export default class extends Command {
+    arguments = [
+        class extends StringArgument {
+            name = 'content';
+        }
+    ]
+
+	execute(message, { content }) {
+		message.reply(content);
+	}
+}
+```
+
+:::
+
+::::
+
+::: tip
+There are different types of arguments, see the list below:
+
+-	`Argument`
+-	`StringArgument`
+-	`BooleanArgument`
+-	`NumberArgument`
+:::
 
 ## Resulting code
 
