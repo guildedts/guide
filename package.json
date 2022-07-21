@@ -1,6 +1,6 @@
 {
 	"name": "@guildedts/guide",
-	"version": "0.0.1",
+	"version": "0.0.0",
 	"description": "A Guide for creating a Guilded.TS bot.",
 	"private": true,
 	"contributors": [
@@ -18,10 +18,12 @@
 	"license": "Apache-2.0",
 	"packageManager": "yarn@3.2.0",
 	"devDependencies": {
+		"@guildedts/framework": "^0.1.2",
 		"@vuepress/plugin-search": "next",
 		"eslint": "^8.14.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-markdown": "^2.2.1",
+		"guilded.ts": "^0.10.4",
 		"prettier": "^2.6.2",
 		"vuepress-vite": "^2.0.0-beta.6"
 	}

@@ -1,5 +1,6 @@
 node_modules
-.yarn/cache
+.yarn/*
+!.yarn/releases
 .temp
 .cache
 dist

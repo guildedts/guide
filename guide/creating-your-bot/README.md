@@ -102,7 +102,7 @@ Create a `index.{js,ts}` file in the root of your project and add the following:
 ```ts{1,3,5}
 import Client from '@guildedts/framework';
 
-const dev = process.argv[0] === 'dev';
+const dev = process.argv.includes('--dev');
 
 new Client({ dev });
 ```
@@ -113,7 +113,7 @@ new Client({ dev });
 ```js{1,3,5}
 const { Client } = require('@guildedts/framework');
 
-const dev = process.argv[0] === 'dev';
+const dev = process.argv.includes('--dev');
 
 new Client({ dev });
 ```
@@ -124,7 +124,7 @@ new Client({ dev });
 ```js{1,3,5}
 import Client from '@guildedts/framework';
 
-const dev = process.argv[0] === 'dev';
+const dev = process.argv.includes('--dev');
 
 new Client({ dev });
 ```
@@ -132,14 +132,15 @@ new Client({ dev });
 :::
 ::::
 
+#### Examples
+
+-   [JavaScript](https://github.com/guildedts/guide/tree/main/examples/javascript/index.js)
+-   [TypeScript](https://github.com/guildedts/guide/tree/main/examples/typescript/index.ts)
+
 Now that you have created a custom client, you can now run `node index.js` (`ts-node index.ts` for [ts-node](https://npmjs.org/ts-node)).
 
 ::: tip
-You can add `"main": "index.js"` in your `package.json` so you can use `node .`. You can also include a script like `"scripts": { "start": "node ." }` (`"scripts": { "start": "ts-node path/to/index" }` for [ts-node](https://npmjs.org/ts-node)) to be able to run `npm start` or `npm run start`.
+You can add `"main": "index.js"` in your `package.json` so you can use `node .`. You can also include a script like `"scripts": { "start": "node ." }` (`"scripts": { "start": "ts-node index" }` for [ts-node](https://npmjs.org/ts-node)) to be able to run `npm start` or `npm run start`.
 
 You can also stop the current process by pressing `Ctrl + C` and then press the up arrow to show the last command in your terminal.
 :::
-
-## Resulting code
-
-If you want to check over the code we have shown, you can view it in our GitHub repository [here](https://github.com/guildedts/guide/tree/main/examples/creating-your-bot/initial-files).

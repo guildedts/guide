@@ -7,7 +7,7 @@ In this section you will learn how to listen for events with the `Event` abstrac
 ::: code-group-item TypeScript
 
 ```ts{1,3-7}
-import { Event, Client } from '@guildedts/framework';
+import Client, { Event } from '@guildedts/framework';
 
 export default class extends Event {
 	execute(client: Client) {
@@ -47,6 +47,11 @@ export default class extends Event {
 :::
 
 ::::
+
+#### Examples
+
+-	[JavaScript](https://github.com/guildedts/guide/tree/main/examples/javascript/events/ready.js)
+-	[TypeScript](https://github.com/guildedts/guide/tree/main/examples/typescript/events/ready.ts)
 
 ::: tip
 By default, the event name is the name of the file without the extension. For example, `ready.js` is `ready`.

@@ -1,6 +1,10 @@
 # Creating commands
 
-In this section you will learn how to create simple commands with the `Command` abstract class from the **Guilded.TS framework**. Lets start by creating a folder named `commands` in the root directory, this will be used to store your commands. After you have made a `commands` directory, create a file named `ping.{js,ts}` inside it, this will be your **ping** command. Inside the file, add the following:
+In this section you will learn how to create simple commands with the `Command` abstract class from the **Guilded.TS framework**.
+
+## Creating a command
+
+Lets start by creating a folder named `commands` in the root directory, this will be used to store your commands. After you have made a `commands` directory, create a file named `ping.{js,ts}` inside it, this will be your **ping** command. Inside the file, add the following:
 
 :::: code-group
 
@@ -48,6 +52,11 @@ export default class extends Command {
 :::
 
 ::::
+
+#### Examples
+
+-	[JavaScript](https://github.com/guildedts/guide/tree/main/examples/javascript/commands/ping.js)
+-	[TypeScript](https://github.com/guildedts/guide/tree/main/examples/typescript/commands/ping.ts)
 
 ::: tip
 By default, the command name is the name of the file without the extension. For example, `ping.js` is `ping`.
@@ -120,6 +129,11 @@ export default class extends Command {
 
 ::::
 
+#### Examples
+
+-	[JavaScript](https://github.com/guildedts/guide/tree/main/examples/javascript/commands/echo.js)
+-	[TypeScript](https://github.com/guildedts/guide/tree/main/examples/typescript/commands/echo.ts)
+
 ::: tip
 There are different types of arguments, see the list below:
 
@@ -128,7 +142,3 @@ There are different types of arguments, see the list below:
 -	`BooleanArgument`
 -	`NumberArgument`
 :::
-
-## Resulting code
-
-If you want to check over the code we have shown, you can view it in our GitHub repository [here](https://github.com/guildedts/guide/tree/main/examples/creating-your-bot/creating-commands).

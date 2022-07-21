@@ -24,6 +24,11 @@ Making a **Guilded bot** may be cool and all, but there are some things you shou
 
 After you have got a good grasp at **JavaScript**, feel free to come back here to continue the Guide.
 
+## Examples
+
+-   [JavaScript](https://github.com/guildedts/guide/tree/main/examples/javascript)
+-   [TypeScript](https://github.com/guildedts/guide/tree/main/examples/typescript)
+
 ---
 
 Inspired by the [Discord.JS Guide](https://discordjs.guide).
