@@ -8,7 +8,7 @@
 		"build": "vuepress build guide",
 		"lint": "pnpm eslint guide/**/*.{ts,md} examples/**/*.{ts,js}",
 		"format": "pnpm prettier **/*.{ts,js,md,json,yml,yaml} --write",
-		"prepare": "husky insall"
+		"prepare": "husky install"
 	},
 	"repository": "https://github.com/guildedts/guide/@guildedts/guide",
 	"contributors": [
