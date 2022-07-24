@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "vuepress dev guide",
 		"build": "vuepress build guide",
-		"lint": "pnpm eslint guide/**/*.{ts,md} examples/**/*.{ts,js} --fix",
+		"lint": "pnpm eslint guide/**/*.{ts,md} examples/**/*.{ts,js}",
 		"format": "pnpm prettier **/*.{ts,js,md,json,yml,yaml} --write",
 		"prepare": "husky insall"
 	},
