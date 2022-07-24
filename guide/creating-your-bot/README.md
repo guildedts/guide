@@ -10,38 +10,57 @@ Now that you have you bot token while [getting your bot token](//getting-started
 This is required for the **Guilded.TS framework** to be able to login with your bot's token.
 :::
 
-Create a `gtsconfig.{json,js,ts}` in the root of your project and add the following:
+Create a `gtsconfig.{json,js,ts,yml,yaml}` in the root of your project and add the following:
 
 :::: code-group
 ::: code-group-item JSON
 
-```json{1-3}
+```json{1-4}
 {
-    "token": "token"
+    "$schema": "https://guildedts.js.org/media/gtsconfig-schema.json",
+    "token": "token",
+    "prefix": "!"
 }
 ```
 
 :::
 ::: code-group-item TypeScript
 
-```ts{1}
-export const token = 'token';
+```ts{1,3-6}
+import { ClientConfig } from '@guildedts/framework';
+
+export default {
+    token: 'token',
+    prefix: '!'
+} as ClientConfig;
 ```
 
 :::
 ::: code-group-item CommonJS
 
-```js{1-3}
+```js{1-4}
 module.exports = {
-    token: 'token'
+    token: 'token',
+    prefix: '!'
 }
 ```
 
 :::
 ::: code-group-item ESM
 
-```js{1}
-export const token = 'token';
+```js{1-4}
+export default {
+    token: 'token',
+    prefix: '!'
+}
+```
+
+:::
+::: code-group-item YML/YAML
+
+```yaml{1-2}
+token: token
+prefix: '!'
 ```
 
 :::
@@ -53,7 +72,7 @@ It is important to ignore files and folders that are not needed or have sensetiv
 
 ```{1-2}
 node_modules
-gtsconfig.{json,js,ts}
+gtsconfig.{json,js,ts,yml,yaml}
 ```
 
 ::: tip

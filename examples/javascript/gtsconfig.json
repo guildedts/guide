@@ -1,3 +1,5 @@
 {
-	"token": "token"
+	"$schema": "https://guildedts.js.org/media/gtsconfig-schema.json",
+	"token": "token",
+	"prefix": "!"
 }

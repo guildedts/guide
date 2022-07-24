@@ -1,6 +1,5 @@
 node_modules
-.yarn/*
-!.yarn/releases
-.temp
-.cache
-dist
+*/.vuepress/*
+!*/.vuepress/configs
+!*/.vuepress/public
+!*/.vuepress/config.ts

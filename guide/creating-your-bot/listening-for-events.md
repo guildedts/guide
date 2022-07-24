@@ -50,8 +50,8 @@ export default class extends Event {
 
 #### Examples
 
--	[JavaScript](https://github.com/guildedts/guide/tree/main/examples/javascript/events/ready.js)
--	[TypeScript](https://github.com/guildedts/guide/tree/main/examples/typescript/events/ready.ts)
+-   [JavaScript](https://github.com/guildedts/guide/tree/main/examples/javascript/events/ready.js)
+-   [TypeScript](https://github.com/guildedts/guide/tree/main/examples/typescript/events/ready.ts)
 
 ::: tip
 By default, the event name is the name of the file without the extension. For example, `ready.js` is `ready`.
