@@ -15,7 +15,7 @@ Create a `gtsconfig.{json,js,ts,yml,yaml}` in the root of your project and add t
 :::: code-group
 ::: code-group-item JSON
 
-```json{1-4}
+```json{1-5}
 {
     "$schema": "https://guildedts.js.org/media/gtsconfig-schema.json",
     "token": "token",
