@@ -2,6 +2,7 @@
 	"name": "@guildedts/guide",
 	"version": "0.0.0",
 	"description": "A Guide for creating a Guilded.TS bot.",
+	"repository": "guildedts/guide",
 	"private": true,
 	"scripts": {
 		"dev": "vuepress dev guide",
@@ -10,9 +11,11 @@
 		"format": "pnpm prettier **/*.{ts,js,md,json,yml,yaml} --write",
 		"prepare": "husky install"
 	},
-	"repository": "https://github.com/guildedts/guide/@guildedts/guide",
 	"contributors": [
-		"Gamertike (https://gamertike.com)"
+		{
+			"name": "Danielius | Gamertike",
+			"url": "https://gamertike.com"
+		}
 	],
 	"license": "Apache-2.0",
 	"devDependencies": {
