@@ -1,10 +1,10 @@
 {
-	"env": {
-		"commonjs": true,
-		"es2022": true
-	},
-	"extends": ["plugin:markdown/recommended", "plugin:@typescript-eslint/recommended", "prettier"],
-	"parser": "@typescript-eslint/parser",
+	"extends": [
+		"eslint:recommended",
+		"plugin:markdown/recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:prettier/recommended"
+	],
 	"rules": {
 		"@typescript-eslint/no-var-requires": "off"
 	}
