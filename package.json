@@ -18,21 +18,25 @@
 		}
 	],
 	"license": "Apache-2.0",
+	"dependencies": {
+		"@vuepress/client": "^2.0.0-beta.49",
+		"@vuepress/plugin-search": "^2.0.0-beta.49",
+		"vue": "^3.2.36",
+		"vuepress-vite": "^2.0.0-beta.49"
+	},
 	"devDependencies": {
-		"@guildedts/framework": "^0.2.0",
-		"@typescript-eslint/eslint-plugin": "^5.30.7",
-		"@typescript-eslint/parser": "^5.30.7",
-		"@vuepress/plugin-search": "next",
-		"eslint": "^8.14.0",
+		"@guildedts/framework": "^0.2.1",
+		"@typescript-eslint/eslint-plugin": "^5.31.0",
+		"@typescript-eslint/parser": "^5.31.0",
+		"eslint": "^8.20.0",
 		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin-markdown": "^2.2.1",
+		"eslint-plugin-markdown": "^3.0.0",
 		"eslint-plugin-prettier": "^4.2.1",
-		"guilded.ts": "^0.13.1",
+		"guilded.ts": "^0.14.0",
 		"husky": "^8.0.1",
 		"lint-staged": "^13.0.3",
-		"prettier": "^2.6.2",
-		"typescript": "^4.7.4",
-		"vuepress-vite": "2.0.0-beta.45"
+		"prettier": "^2.7.1",
+		"typescript": "^4.7.4"
 	},
-	"packageManager": "pnpm@7.6.0"
+	"packageManager": "pnpm@7.8.0"
 }
