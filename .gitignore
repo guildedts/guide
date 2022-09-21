@@ -3,3 +3,4 @@ node_modules
 !.vuepress/configs
 !.vuepress/public
 !.vuepress/config.ts
+!.vuepress/styles
