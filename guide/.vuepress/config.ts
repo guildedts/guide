@@ -7,7 +7,7 @@ export default defineUserConfig({
 	lang: 'en-US',
 	title: 'Guilded.TS Guide',
 	description: 'A Guide for creating a Guilded.TS bot.',
-	plugins: [searchPlugin()],
+	plugins: [searchPlugin({ locales: { '/': { placeholder: 'Search' } } })],
 	head: [['link', { rel: 'icon', href: 'https://guildedts.js.org/media/logo.jpg' }]],
 	theme: defaultTheme({
 		navbar,
