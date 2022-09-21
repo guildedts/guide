@@ -1,5 +1,5 @@
 node_modules
-.vuepress
+.vuepress/*
 !.vuepress/configs
 !.vuepress/public
 !.vuepress/config.ts
