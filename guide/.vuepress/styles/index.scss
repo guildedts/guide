@@ -32,3 +32,7 @@ div[class*=language-]::before {
 .custom-container {
     border-radius: 6px;
 }
+
+.search-box {
+    --search-input-width: 250px;
+}
