@@ -8,17 +8,7 @@ We utilize [VuePress](https://v2.vuepress.vuejs.org) to build the Guide. We also
 
 ```sh{2,4}:no-line-numbers
 # Install all dependencies
-yarn install
+pnpm install
 # Run vuepress in dev mode
-yarn dev
-```
-
-## Committing your changes
-
-After you have made your desired changes, make sure you run the following script before committing your changes:
-
-```sh{3}:no-line-numbers
-# Prepare your code
-# Runs prettier along with eslint
-yarn prepare
+pnpm dev
 ```
